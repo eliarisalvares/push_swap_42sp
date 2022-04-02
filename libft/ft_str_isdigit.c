@@ -6,18 +6,19 @@
 /*   By: elraira- <elraira-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/13 22:54:30 by elraira-          #+#    #+#             */
-/*   Updated: 2021/12/13 22:54:43 by elraira-         ###   ########.fr       */
+/*   Updated: 2022/04/02 19:50:49 by elraira-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 
 int	ft_str_isdigit(char *str)
 {
 	int	i;
 
 	i = 0;
-	if (str[i] == '-')
+	if (str[i] == '-' || str[i] == '+')
 		i++;
 	while (str[i])
 	{
