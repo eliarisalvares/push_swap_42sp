@@ -6,7 +6,7 @@
 /*   By: elraira- <elraira-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/29 22:52:21 by elraira-          #+#    #+#             */
-/*   Updated: 2022/04/02 18:31:00 by elraira-         ###   ########.fr       */
+/*   Updated: 2022/04/03 20:46:13 by elraira-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ t_node	*ft_get_next_min(t_node **stack)
 	return (min);
 }
 
-/**	This function is used for sssigning an index value for radixing. It is
+/**	This function is used for assigning an index value for radixing. It is
 		useful as it allows to makes things simpler and makes working with
 		negative numbers possible. For each number we add to the stack, it
 		checks if it is smaller than what the smallest value found previously.

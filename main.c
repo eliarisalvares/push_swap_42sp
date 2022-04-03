@@ -6,7 +6,7 @@
 /*   By: elraira- <elraira-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/21 15:43:19 by elraira-          #+#    #+#             */
-/*   Updated: 2022/03/31 17:57:41 by elraira-         ###   ########.fr       */
+/*   Updated: 2022/04/03 20:45:39 by elraira-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@
 		line using ' '(space) as a delimiter when argc = 2 (executable + ints).
 		Once it's done or argc > 2, we can begin to iterate over the arguments,
 		first of all converting then into longs (the program must display an
-		error message with longs, but accepts then as arguments), then checking
-		if they are integers (between int_min and int_max), if there are no
-		characters other than digits and no repeated arguments.
+		error message with longs, but accepts them as arguments), then checking
+		if they are integers (between int_min and int_max) and finally if there
+		are no characters other than digits and no repeated arguments.
 	Line 9-12: Allocating memory and initializing stacks values.
 	Line 13: ft_init_stack function - > Just like the validation function,
 		this one splits argument line if all integers are passed together

@@ -6,7 +6,7 @@
 /*   By: elraira- <elraira-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/21 15:44:51 by elraira-          #+#    #+#             */
-/*   Updated: 2022/04/02 17:55:46 by elraira-         ###   ########.fr       */
+/*   Updated: 2022/04/03 20:49:21 by elraira-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,18 +68,19 @@ void	ft_simple_sort(t_node **stack_a, t_node **stack_b)
 {
 	int	size;
 
-	if (ft_is_stack_sorted(stack_a) || ft_stack_size(*stack_a) == 0
-		|| ft_stack_size(*stack_a) == 1)
-		return ;
-	size = ft_stack_size(*stack_a);
-	if (size == 2)
-		sa(stack_a);
-	else if (size == 3)
-		ft_sort_three(stack_a);
-	else if (size == 4)
-		ft_sort_four(stack_a, stack_b);
-	else if (size == 5)
-		ft_sort_five(stack_a, stack_b);
+	if (!ft_is_stack_sorted(stack_a) || !ft_stack_size(*stack_a) == 0
+		|| ft_stack_size(*stack_a) != 1)
+	{
+		size = ft_stack_size(*stack_a);
+		if (size == 2)
+			sa(stack_a);
+		else if (size == 3)
+			ft_sort_three(stack_a);
+		else if (size == 4)
+			ft_sort_four(stack_a, stack_b);
+		else if (size == 5)
+			ft_sort_five(stack_a, stack_b);
+	}
 }
 
 /**
