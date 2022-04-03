@@ -6,7 +6,7 @@
 /*   By: elraira- <elraira-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/21 15:44:51 by elraira-          #+#    #+#             */
-/*   Updated: 2022/04/03 20:49:21 by elraira-         ###   ########.fr       */
+/*   Updated: 2022/04/03 20:55:13 by elraira-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -126,6 +126,9 @@ End result for first bit:
 	011
 ----------     ----------
 	a              b
+
+@see https://medium.com/nerd-for-tech/push-swap-tutorial-fa746e6aba1e, Leo Fu
+	explains this idea in details.
 */
 void	ft_radix_sort(t_node **stack_a, t_node **stack_b)
 {
