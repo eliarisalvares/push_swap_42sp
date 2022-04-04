@@ -6,7 +6,7 @@
 /*   By: elraira- <elraira-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/21 15:43:05 by elraira-          #+#    #+#             */
-/*   Updated: 2022/04/04 11:55:11 by elraira-         ###   ########.fr       */
+/*   Updated: 2022/04/04 13:33:18 by elraira-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ void	ft_check_arguments(int argc, char **argv)
 	{
 		tmp = ft_atol(argv[i]);
 		if (!ft_str_isdigit(argv[i]) || ft_is_repeated(tmp, argv, i)
-		|| tmp < -2147483648 || tmp > 2147483647)
+			|| tmp < -2147483648 || tmp > 2147483647)
 		{
 			ft_putendl_fd("Error", 2);
 			exit(0);
