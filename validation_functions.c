@@ -6,7 +6,7 @@
 /*   By: elraira- <elraira-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/21 15:43:05 by elraira-          #+#    #+#             */
-/*   Updated: 2022/04/02 20:04:58 by elraira-         ###   ########.fr       */
+/*   Updated: 2022/04/03 21:07:44 by elraira-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,15 +31,6 @@ int	ft_is_repeated(int num, char **argv, int i)
 	return (0);
 }
 
-/*	Outputs "Error" and exit program in case of: arguments that aren't
-numbers, arguments bigger than an integer or duplicates.
-*/
-void	ft_error_msg_and_exit(char *msg)
-{
-	ft_putendl_fd(msg, 2);
-	exit(0);
-}
-
 /*	According to the subject: "In case of error, it must display "Error"
 		followed by a '\n' on the standard error.
 	Errors include for example: some arguments aren’t integers, some arguments
@@ -60,10 +51,12 @@ void	ft_check_arguments(int argc, char **argv)
 	while (argv[i])
 	{
 		tmp = ft_atol(argv[i]);
-		if (!ft_str_isdigit(argv[i]) || ft_is_repeated(tmp, argv, i))
-			ft_error_msg_and_exit("Error");
-		if (tmp < -2147483648 || tmp > 2147483647)
-			ft_error_msg_and_exit("Error");
+		if (!ft_str_isdigit(argv[i]) || ft_is_repeated(tmp, argv, i) ||
+			tmp < -2147483648 || tmp > 2147483647)
+		{
+			ft_putendl_fd("Error", 2);
+			exit(0);
+		}
 		i++;
 	}
 	if (argc == 2)

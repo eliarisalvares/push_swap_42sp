@@ -6,7 +6,7 @@
 /*   By: elraira- <elraira-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/21 15:44:12 by elraira-          #+#    #+#             */
-/*   Updated: 2022/04/02 18:25:10 by elraira-         ###   ########.fr       */
+/*   Updated: 2022/04/03 21:07:32 by elraira-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -170,14 +170,6 @@ void		ft_check_arguments(int argc, char **argv);
  * @brief Checks if any number was passed more than once.
  */
 int			ft_is_repeated(int num, char **argv, int i);
-
-/**
- * @brief Outputs "Error" and exit program in case of: arguments that aren't
- * numbers, arguments bigger than an integer or duplicates.
- *
- * @param msg message to be outputted.
- */
-void		ft_error_msg_and_exit(char *msg);
 
 /*.........................simple_sorting_functions.c.........................*/
 
