@@ -6,7 +6,7 @@
 /*   By: elraira- <elraira-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/21 15:44:51 by elraira-          #+#    #+#             */
-/*   Updated: 2022/04/03 20:55:13 by elraira-         ###   ########.fr       */
+/*   Updated: 2022/04/04 13:34:29 by elraira-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,7 +84,7 @@ void	ft_simple_sort(t_node **stack_a, t_node **stack_b)
 }
 
 /**
-	Stack A is box 1 and stack B is box 0. First, we star from
+	Stack A is box 1 and stack B is box 0. First, we start from
 		rightmost bit. All 1s bits get pushed to the bottom (ra).
 		Else, if bit = 0, they get stored in stack B (pb). Once all smaller
 		ones (0s) are in b they can be pushed back one by one on top of stack a
